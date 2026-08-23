@@ -1,4 +1,4 @@
-version: "0.1.0"
+version: "0.2.0"
 name: agents-md-best-practices
 description: 收录遵守AGENTS.md开放规范的通用提示词工程最佳实践，供Agent在开发项目时加载使用
 license: MIT
