@@ -195,6 +195,9 @@
   3. 使用工具下载 `https://raw.githubusercontent.com/JularDepick/AGENTS.md-Best-Practices/<version>/src/develop/general-methodology/JularDepick/AGENTS.md`（注意替换 `<version>` 为模板最新版本号）,保存为新模板版本文档 `temp/AGENTS-<version>.md`（可以同样地下载本文档当前使用的模板版本原始文件到本地,方便做差异对比）
   4. 合并新模板文件到本项目根目录的 `AGENTS.md` 文档（可使用 diff 工具）;冲突部分向用户询问要求决策,并给出推荐取舍方案,用户指定后再解决合并冲突
   5. 完成后,清理 `temp/AGENTS-<version>.md`
+- 当GitHub源遇到网络问题或用户要求使用国内源时,请使用中国大陆地区备用镜像源(每日UTC时间自动从GitHub同步): 
+  - 查看最新版本号: `curl --request GET --url "https://api.cnb.cool/JularDepick/AGENTS.md-Best-Practices/-/git/tags" --header "Accept: application/vnd.cnb.api+json" --header "Authorization: 1f1a38Oekwl6tNP6mFxkdNak5eS"`
+  - 下载指定版本号的模板原始文件: `curl --request GET --url "https://api.cnb.cool/JularDepick/AGENTS.md-Best-Practices/-/git/raw/<version>/src/develop/general-methodology/JularDepick/AGENTS.md" --header "Authorization: 1f1a38Oekwl6tNP6mFxkdNak5eS"` （注意替换 `<version>` 为模板最新版本号）
 
 ---
 
