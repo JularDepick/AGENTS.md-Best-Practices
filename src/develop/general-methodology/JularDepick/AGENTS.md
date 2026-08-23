@@ -27,6 +27,7 @@
 - 维护任意md文档时,允许改写、转换说法,但是不得丢失细节,除非用户明确提出额外要求
 - 维护任意md文档时,自然语言描述部分尽量使用用户所使用的语言,避免非必要的英文表述,例如 `Phrase 1` 是非必要的,而专业术语 `MySQL` 是必要的
 - 维护任意md文档时,如果使用到表格,应该默认使用 `|:---:|` 单元格居中
+- 文档的版本徽章显示文字中，版本号不带v字母前缀
 - 项目README文档的维护应该以中文版的 `README.md` 或 `README_zh-CN.md` 为核心,最后再翻译成英文版的 `README_en-US.md` 或 `README.md`,主README使用何种自然语言由用户决定
 - 项目README文档内介绍功能特性的位置不要介绍非功能性的细节
 - 项目README文档可以参考本文档内的非守则内容,但不要照搬,而是针对产品用户、开发者、社区协作者的群体特性选取
@@ -72,7 +73,7 @@
 - 本文档是写给 Agent、与Agent协作的人类开发者 看的
 - 本文档的表述中,“用户”系指与Agent进行对话交互的人类主体(在上下文中具有用户标识),“开发者”系指有能力对本项目源码作出修改和优化的人类主体,“产品用户”系指使用和体验本项目产物的人类主体(一般不参与开发)
 - 本文档当前使用的模板版本号为 `v0.1.1`
-- 当用户明确要求更新本 `AGENTS.md` 文档的模板版本时: (使用curl工具)访问 `https://api.github.com/repos/JularDepick/AGENTS.md-Best-Practices/tags` 并解析返回的json文本中的第一个 `name` 字段(值即模板最新版本号),如果该字段的版本号大于本文档当前使用的模板版本号(已在本文档中定义),则继续下一步,否则携带版本号告知用户已是最新版本并结束本流程;下一步使用工具下载 `https://raw.githubusercontent.com/JularDepick/AGENTS.md-Best-Practices/<version>/src/develop/general-methodology/JularDepick/AGENTS.md` (注意替换 `<version>` 为模板最新版本号)并保存为新模板版本文档 `temp/AGENTS-<version>.md` ,然后合并新模板文件到本项目根目录的 `AGENTS.md` 文档(可使用diff工具),冲突部分向用户询问要求决策并给出推荐取舍方案,用户指定后再解决合并冲突;完成后,清理 `temp/AGENTS-<version>.md`
+- 当用户明确要求更新本 `AGENTS.md` 文档的模板版本时: (使用curl工具)访问 `https://api.github.com/repos/JularDepick/AGENTS.md-Best-Practices/tags` 并解析返回的json文本中的第一个 `name` 字段(值即模板最新版本号),如果该字段的版本号大于本文档当前使用的模板版本号(已在本文档中定义),则继续下一步,否则携带版本号告知用户已是最新版本并结束本流程;下一步使用工具下载 `https://raw.githubusercontent.com/JularDepick/AGENTS.md-Best-Practices/<version>/src/develop/general-methodology/JularDepick/AGENTS.md` (注意替换 `<version>` 为模板最新版本号)并保存为新模板版本文档 `temp/AGENTS-<version>.md` (可以同样地下载本文档当前使用的模板版本原始文件到本地方便做差异对比),然后合并新模板文件到本项目根目录的 `AGENTS.md` 文档(可使用diff工具),冲突部分向用户询问要求决策并给出推荐取舍方案,用户指定后再解决合并冲突;完成后,清理 `temp/AGENTS-<version>.md`
 
 ---
 

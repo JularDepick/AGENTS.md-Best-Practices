@@ -1,14 +1,11 @@
 # Agent Runtime
 /AGENTS.md
 /AGENTS*.md
-.startClaude.bat
-.startMiMo.bat
-
-# Agent Tool
-.mimocode/
 
 # release
 release/
 dist/
 build/
 *.zip
+*.bat
+*.cmd
