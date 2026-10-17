@@ -2,7 +2,7 @@
 
 # AGENTS.md-Best-Practices
 
-[![Version](https://img.shields.io/badge/Version-0.2.1-green)](https://github.com/JularDepick/AGENTS.md-Best-Practices/releases/tag/v0.2.1)
+[![Version](https://img.shields.io/badge/Version-0.2.2-green)](https://github.com/JularDepick/AGENTS.md-Best-Practices/releases/tag/v0.2.2)
 [![Copyright](https://img.shields.io/badge/Copyright-JularDepick-0066AA)](./COPYRIGHT)
 [![MIT](https://img.shields.io/badge/License-MIT-yellow)](./LICENSE)
 
